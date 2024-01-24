@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- BOOTSTRAP -->
-    
     <link rel="stylesheet" href="scss/form.css">
     <link rel="stylesheet" href="scss/index-form.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -59,67 +59,86 @@
             </div>
         </div>
     </nav>
-
-
     
+
+
+
+
 <!-- CONTACT -->
-<div class="section watch" id="section4">
-    <h1 class="title min">CONTACT</h1>
-    <div class="panel d-flex justify-content-between align-items-center ">
-        <div class="container watch fade-in ">
-            <form class="login-form" action="javascript:void(0);">
-                <h1>Let's talk</h1>
-                <p style="text-align:center;white-space:pre-wrap;" class="">Feel free to reach out if you want to collaborate, connect <br> or just have a chat.</p>
-                <div class="form-input-material testo">
-                  <input type="text" name="name" id="firstname" placeholder=" " autocomplete="on" class="form-control-material" required />
-                  <label for="username">First Name</label>
-                </div>
-                <div class="form-input-material testo">
-                  <input type="text" name="surname" id="lastname" placeholder=" " autocomplete="on" class="form-control-material" required />
-                  <label for="password">Last Name</label>
-                </div>
-                <div class="form-input-material testo">
-                    <input type="email" name="email" id="email" placeholder=" " autocomplete="on" class="form-control-material" required />
-                    <label for="email">Email Address</label>
-                </div>
+    <div class="section watch" id="section4">
+        <h1 class="title min">CONTACT</h1>
+        <div class="panel d-flex justify-content-between align-items-center">
+            <div class="container watch">
 
-                <div class="form-input-material testo">
-                    <input type="text" name="message" id="message" placeholder=" " autocomplete="on" class="form-control-material text" required />
-                    <label for="message">Message</label>
+                <form class="login-form" action="javascript:void(0);">
+                    <h1>Let's talk</h1>
+                    <p style="text-align:center;white-space:pre-wrap;" class="">Feel free to reach out if you want to collaborate, connect <br> or just have a chat.</p>
+                    <div class="form-input-material testo">
+                    <input type="text" name="name" id="firstname" placeholder=" " autocomplete="on" class="form-control-material" required />
+                    <label for="username">First Name</label>
+                    </div>
+                    <div class="form-input-material testo">
+                    <input type="text" name="surname" id="lastname" placeholder=" " autocomplete="on" class="form-control-material" required />
+                    <label for="password">Last Name</label>
+                    </div>
+                    <div class="form-input-material testo">
+                        <input type="email" name="email" id="email" placeholder=" " autocomplete="on" class="form-control-material" required />
+                        <label for="email">Email Address</label>
+                    </div>
 
-                    
-                </div>
+                    <div class="form-input-material testo">
+                        <input type="text" name="message" id="message" placeholder=" " autocomplete="on" class="form-control-material text" required />
+                        <label for="message">Message</label>
 
-                <button onclick="SendMail()" type="submit" class="bottone btn-primary btn-ghost">Send</button>
-              </form>
+                        
+                    </div>
+
+                    <button onclick="SendMail()" type="submit" class="bottone btn-primary btn-ghost">Send</button>
+                </form>
+
+                
+            </div>
+        </div>
+
+        <!-- TOAST -->
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-color text-dark">
+                <!-- <img src="" class="rounded mr-2" alt=""> -->
+                <strong class="mx-auto">Email mandata con successo!✌🏼</strong>
+                <button type="button" class="btn-dark accordion-collapse " aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body text-center text-green">
+                <strong>Email mandata con successo!</strong>
+            </div>
         </div>
     </div>
-</div>
 
-<footer class="d-flex justify-content-between align-items-center">
-    <div>
-        <h5 class="testo">© Daniel Iozia 2024</h5>
-    </div>
-    
-    <div class="d-flex flex-column align-items-start ">
-        <div class="d-flex justify-content-around align-items-center">
-            <a class="text-light me-3 text-center" href="#">
-                <h4 class="bi bi-linkedin"> </h4>
-            </a>
-            <a class="text-light me-3" href="#">
-                <h4 class="bi bi-github"></h4>
-            </a>
-            <a class="text-light me-3" href="#">
-                <h4 class="bi bi-facebook"></h4>
-            </a>
+
+   
+
+    <footer class="d-flex justify-content-between align-items-center">
+        <div>
+            <h5 class="testo">© Daniel Iozia 2024</h5>
         </div>
-    </div>
-</footer>
-
-
-<script>
         
-    var elements_to_watch = document.querySelectorAll(".watch");
+        <div class="d-flex flex-column align-items-start ">
+            <div class="d-flex justify-content-around align-items-center">
+                <a class="text-light me-3 text-center" href="https://www.linkedin.com/in/daniel-iozia-283486201/">
+                    <h4 class="bi bi-linkedin"></h4>
+                </a>
+                <a class="text-light me-3" href="https://github.com/DanielIozia">
+                    <h4 class="bi bi-github"></h4>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // effetto dinamico quando cambio pagina su desktop
+var elements_to_watch = document.querySelectorAll(".watch");
     
     var callback = function(items) {
        items.forEach((item) => {
@@ -138,46 +157,49 @@
     elements_to_watch.forEach((element) => {
        observer.observe(element);
     });
-    
-    // fa cambiare colore agli elementi della nav-bar quando sono sopra il pannello 
-    </script>
-    
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $(window).on('scroll', function() {
-            $('.section').each(function() {
-                if ($(window).scrollTop() >= $(this).offset().top && $(window).scrollTop() < ($(this).offset().top + $(this).outerHeight())) {
-                    var sectionId = $(this).attr('id');
-                    $('.navbar-nav .nav-link').removeClass('active');
-                    $('.navbar-nav .nav-link[href="#' + sectionId + '"]').addClass('active');
-                }
-            });
+ // effetto dinamico quando cambio pagina su desktop
+ 
+
+
+
+
+
+// fa cambiare colore agli elementi della nav-bar quando sono sopra il pannello 
+ $(document).ready(function() {
+    $(window).on('scroll', function() {
+        $('.section').each(function() {
+            if ($(window).scrollTop() >= $(this).offset().top && $(window).scrollTop() < ($(this).offset().top + $(this).outerHeight())) {
+                var sectionId = $(this).attr('id');
+                $('.navbar-nav .nav-link').removeClass('active');
+                $('.navbar-nav .nav-link[href="#' + sectionId + '"]').addClass('active');
+            }
         });
     });
-    </script>
+});
+// fa cambiare colore agli elementi della nav-bar quando sono sopra il pannello 
+   
 
 
-<script> // Modificare alert con un toast boostrap
-    function SendMail(){
+
+
+
+
+// permette di far mandare le email tramite il form
+function SendMail(){
     var params = {
         from_name : document.getElementById("firstname").value,
         email_id : document.getElementById("email").value,
         message: document.getElementById("message").value,
     }
 
-    emailjs.send("service_0pl5l7o","template_9975wp5",params).then(function(res){
-        alert("Successfully sent email!")
-    })
+    emailjs.send("service_0pl5l7o", "template_9975wp5", params).then(function (res) {
+            // Utilizza il toast di Bootstrap al posto dell'alert
+            $('.toast-body').text("Grazie per avermi contattato!");
+            $('.toast').toast('show'); 
+        });
 }
-</script>
-    
-    
-       
-        
-        
-    
-        
+// permette di far mandare le email tramite il form
+    </script>
+
     </body>
     </html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -10,7 +11,7 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="scss/form.css">
-    <title>Daniel Iozia2</title>
+    <title>Daniel Iozia</title>
 </head>
 <body>
 
@@ -96,21 +97,40 @@
         <div class="panel d-flex justify-content-start align-items-center">
             
             <div class="container ">
+                
                  <!-- <span _ngcontent-ng-c1280225423="" class="watch fade-in hand">👋🏻</span> -->
                  <div class="h-100 d-flex flex-column justify-content-start align-items-center"> <!-- Aggiunto 'align-items-center' per centrare l'intero contenuto verticalmente -->
 
                     <div>
-                        <img src="/Users/daniel/Desktop/Progetto2/img/icona.jpg" alt="Immagine" class="rounded-circle img-circle mobile-img"> <!-- Aggiunta la classe 'rounded-circle' per rendere l'immagine rotonda -->
+                        <img src="/Users/daniel/Desktop/Portfolio/img/icona.jpg" alt="Immagine" class="rounded-circle img-circle mobile-img"> <!-- Aggiunta la classe 'rounded-circle' per rendere l'immagine rotonda -->
                     </div>
                 
-                    <div class="">
-                        <h1 class="watch fade-in title-big dim-mobile">About me</h1>
-                        <h5 class="watch fade-in intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi doloremque velit repellat inventore, expedita accusamus pariatur, corporis iste commodi eum eveniet. Sint numquam asperiores optio, inventore accusantium eum voluptas recusandae.</h5>                      
+                    <div class="orizzontale">
+                        <h1 class="watch fade-in title-big dim-mobile text-center">About me</h1>
+                        <p class="watch fade-in intro modifiche-paragrafo">I am a Computer Science student at the University of Pisa,
+                            currently enrolled in an extra-university course on Full Stack Development offered by <a href="https://www.start2impact.it/" target="_blank" class="modifiche">Start2Impact University</a>.
+                            Outside the academic realm, I derive great pleasure from exploring the world around us. 
+                            I believe that traveling and discovering new places are essential for enriching one's perspective and personal growth.</p>                      
                     </div>
                 
-                    <div class="h-100 mt-3 text-center centro-mobile">
+                    <div class="h-100  d-flex justify-content-between centro-mobile w-75 w-120-orizzontale">
                         <!-- <h5 class="watch fade-in intro intro-mobile">View my CV</h5> -->
+                        <div>
                         <a data-mdb-ripple-init class="btn btn-outline-light btn-md watch fade-in ms-auto mx-auto" href="#section1" role="button" rel="nofollow">CURRICULUM</a> 
+                        </div>
+
+                        <div class="watch fade-in social-links">
+                            <a href="https://www.instagram.com/daniel.iozia?igsh=MTNhd2p2Mmh0MDR4cw%3D%3D&utm_source=qr" target="_blank">
+                                <img src="https://img.icons8.com/?size=256&id=32309&format=png" class="grandezza-logo" alt="Instagram">
+                            </a>
+                            <a href="https://www.linkedin.com/in/daniel-iozia-283486201/" target="_blank">
+                                <img src="https://img.icons8.com/?size=256&id=8808&format=png" class="grandezza-logo" alt="Linkedin">
+                            </a>
+                            <a href="https://github.com/DanielIozia" target="_blank">
+                                <img src="https://img.icons8.com/?size=256&id=12599&format=png" class="grandezza-logo" alt="Github">
+                            </a>
+                            
+                        </div>
                     </div>
                 
                 </div>
@@ -131,8 +151,8 @@
         
         <div class="panel mobile desktop d-flex flex-column justify-content-center align-items-center">  <!-- d-flex flex-column justify-content-center-->
             <div class="container watch fade-in">
-                <div class="container d-flex justify-content-between align-items-center ">
-                    <div class=" mobile-space">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div class="mobile-space">
                         <h1 class="title-big">Frontend</h1>
                         <div class="text-center intro">
                             <h4>HTML</h4>
@@ -154,8 +174,6 @@
         </div>
     </div> 
 
-    
-
    <!--  PROJECTS -->
     <div class="section watch section-grande" id="section3">  <!-- SE AGGIUNGO PROGETTI DEVO ALLUNGARE LA PAGINA: CLASSE section-grande -->
 
@@ -175,10 +193,10 @@
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                                 <title>Placeholder</title>
                                 <text x="50%" y="50%" fill="#eceeef" dy=".3em">Project1</text>
-                                <image xlink:href="/Users/daniel/Desktop/Progetto2/img/verde.jpeg" width="100%" height="100%" />
+                                <image xlink:href="/Users/daniel/Desktop/Portfolio/img/icona.jpg" width="100%" height="100%" />
                             </svg>
                             <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, blanditiis! Vitae iste quidem, incidunt officiis facere minima consequatur, architecto mollitia cum nemo vel ullam libero aperiam aliquid iure cumque earum.</p>
+                                <p class="card-text"><strong>Qui scriverò la descrizione dei miei progetti</strong> <br> ipsum dolor sit amet consectetur adipisicing elit. Sapiente, blanditiis! Vitae iste quidem, incidunt officiis facere minima consequatur, architecto mollitia cum nemo vel ullam libero aperiam aliquid iure cumque earum.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <a data-mdb-ripple-init class="btn btn-sm btn-outline-dark" href="#section3" role="button" rel="nofollow">View on Github</a> 
@@ -188,18 +206,17 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col margine-mobile">
                         <div class="card shadow-sm" style="background: linear-gradient(225deg,#5f758b,#98c1d3);">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                                 <title>Placeholder</title>
                                 <text x="50%" y="50%" fill="#eceeef" dy=".3em">Project1</text>
                                 
-                                <image xlink:href="/Users/daniel/Desktop/Progetto2/img/icona.jpg" width="100%" height="100%" />
+                                <image xlink:href="/Users/daniel/Desktop/Portfolio/img/icona.jpg" width="100%" height="100%" />
                             </svg>
                 
                             <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facere, id tempora placeat in vitae exercitationem dicta libero distinctio architecto voluptas aliquam ratione perferendis sunt ipsam consequatur.</p>
+                                <p class="card-text"> <strong>Qui scriverò la descrizione dei miei progetti</strong> <br> ipsum dolor sit amet consectetur adipisicing elit. Cumque facere, id tempora placeat in vitae exercitationem dicta libero distinctio architecto voluptas aliquam ratione perferendis sunt ipsam consequatur.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <a data-mdb-ripple-init class="btn btn-sm btn-outline-dark" href="#section3" role="button" rel="nofollow">View on Github</a> 
@@ -215,11 +232,11 @@
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                                 <title>Placeholder</title>
                                 <text x="50%" y="50%" fill="#eceeef" dy=".3em">Project1</text>
-                                <image xlink:href="/Users/daniel/Desktop/Progetto2/img/icona.jpg" width="100%" height="100%" />
+                                <image xlink:href="/Users/daniel/Desktop/Portfolio/img/icona.jpg" width="100%" height="100%" />
                             </svg>
             
                             <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. frhuehuehufehfeef whuhfe Cumque facere, id tempora placeat in vitae exercitationem dicta libero distinctio architecto voluptas aliquam ratione perferendis sunt ipsam consequatur.</p>
+                                <p class="card-text"><strong>Qui scriverò la descrizione dei miei progetti</strong> <br> ipsum dolor sit amet consectetur adipisicing elit. frhuehuehufehfeef whuhfe Cumque facere, id tempora placeat in vitae exercitationem dicta libero distinctio architecto voluptas aliquam ratione perferendis sunt ipsam consequatur.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <a data-mdb-ripple-init class="btn btn-sm btn-outline-dark" href="#section3" role="button" rel="nofollow">View on Github</a> 
@@ -236,11 +253,11 @@
                             <title>Placeholder</title>
                             <text x="50%" y="50%" fill="#eceeef" dy=".3em">Project1</text>
                             
-                            <image xlink:href="/Users/daniel/Desktop/Progetto2/img/verde.jpeg" width="100%" height="100%" />
+                            <image xlink:href="/Users/daniel/Desktop/Portfolio/img/icona.jpg" width="100%" height="100%" />
                         </svg>
             
                         <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. fehwuiehfuwehufhuehuefhfe Eum, perspiciatis. Quidem labore modi reprehenderit fugiat doloribus optio temporibus inventore sint eius voluptas. Ad, ratione eligendi hic vel aliquid laborum harum?</p>
+                            <p class="card-text"><strong>Qui scriverò la descrizione dei miei progetti</strong> <br> ipsum dolor sit amet consectetur adipisicing elit. fehwuiehfuwehufhuehuefhfe Eum, perspiciatis. Quidem labore modi reprehenderit fugiat doloribus optio temporibus inventore sint eius voluptas. Ad, ratione eligendi hic vel aliquid laborum harum?</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <a data-mdb-ripple-init class="btn btn-sm btn-outline-dark"href="#section3" role="button" rel="nofollow">View on Github</a> 
@@ -265,14 +282,11 @@
         
         <div class="d-flex flex-column align-items-start ">
             <div class="d-flex justify-content-around align-items-center">
-                <a class="text-light me-3 text-center" href="#">
+                <a class="text-light me-3 text-center" href="https://www.linkedin.com/in/daniel-iozia-283486201/">
                     <h4 class="bi bi-linkedin"></h4>
                 </a>
-                <a class="text-light me-3" href="#">
+                <a class="text-light me-3" href="https://github.com/DanielIozia">
                     <h4 class="bi bi-github"></h4>
-                </a>
-                <a class="text-light me-3" href="#">
-                    <h4 class="bi bi-facebook"></h4>
                 </a>
             </div>
         </div>
@@ -280,47 +294,47 @@
 
 
 
-    <!-- SCRIPT -->
     <script>
-                
-        var elements_to_watch = document.querySelectorAll(".watch");
+        // effetto dinamico quando cambio pagina su desktop
+var elements_to_watch = document.querySelectorAll(".watch");
+    
+    var callback = function(items) {
+       items.forEach((item) => {
+          if (item.isIntersecting && !item.target.classList.contains("in-page")) {
+             item.target.classList.add("in-page");
+          } else if (!item.isIntersecting) {
+             item.target.classList.remove("in-page");
+          }
+       });
+    }
+    
+    var observer = new IntersectionObserver(callback, {
+       threshold: 0.8
+    });
+    
+    elements_to_watch.forEach((element) => {
+       observer.observe(element);
+    });
+ // effetto dinamico quando cambio pagina su desktop
+ 
 
-        var callback = function(items) {
-        items.forEach((item) => {
-            if (item.isIntersecting && !item.target.classList.contains("in-page")) {
-                item.target.classList.add("in-page");
-            } else if (!item.isIntersecting) {
-                item.target.classList.remove("in-page");
+
+
+
+
+// fa cambiare colore agli elementi della nav-bar quando sono sopra il pannello 
+ $(document).ready(function() {
+    $(window).on('scroll', function() {
+        $('.section').each(function() {
+            if ($(window).scrollTop() >= $(this).offset().top && $(window).scrollTop() < ($(this).offset().top + $(this).outerHeight())) {
+                var sectionId = $(this).attr('id');
+                $('.navbar-nav .nav-link').removeClass('active');
+                $('.navbar-nav .nav-link[href="#' + sectionId + '"]').addClass('active');
             }
         });
-        }
-
-        var observer = new IntersectionObserver(callback, {
-        threshold: 0.8
-        });
-
-        elements_to_watch.forEach((element) => {
-        observer.observe(element);
-        });
-
-        // fa cambiare colore agli elementi della nav-bar quando sono sopra il pannello 
+    });
+});
+// fa cambiare colore agli elementi della nav-bar quando sono sopra il pannello 
     </script>
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(window).on('scroll', function() {
-                $('.section').each(function() {
-                    if ($(window).scrollTop() >= $(this).offset().top && $(window).scrollTop() < ($(this).offset().top + $(this).outerHeight())) {
-                        var sectionId = $(this).attr('id');
-                        $('.navbar-nav .nav-link').removeClass('active');
-                        $('.navbar-nav .nav-link[href="#' + sectionId + '"]').addClass('active');
-                    }
-                });
-            });
-        });
-    </script>
-    
 </body>
 </html>

@@ -9,20 +9,39 @@ body, html {
 html {
     scroll-behavior: smooth;
 }
-/* Non servono 
 
-
-.transparent-navbar {
-    background-color: transparent !important;
-    box-shadow: none !important;
+footer{
+    background-color: #1c2c4a !important;  
 }
 
-.transparent-navbar.navbar-scrolled {
-    background-color: #000; 
-    transition: background-color 0.3s ease; 
+.modifiche{
+    color:white;
 }
 
-*/
+.modifiche:hover{
+    color: #3f64a8;
+}
+
+.modifiche-paragrafo{
+    text-align: left !important;
+}
+
+.grandezza-logo{
+    margin: 0 auto;
+    width:50px !important;
+    height:50px !important;
+}
+
+.grandezza-logo:hover{
+    width: 55px !important;
+    height: 55px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-links a {
+    color: inherit; /* Imposta il colore del testo come ereditato */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
 
 
 .img-bg-section1{
@@ -33,7 +52,7 @@ html {
     left: 0;
     background-size: cover; /* Imposta la dimensione dell'immagine di sfondo su "cover" */
     opacity: 0.6;
-    background-image: url('/Users/daniel/Desktop/Progetto2/img/sfondo12.svg');
+    background-image: url('/Users/daniel/Desktop/Portfolio/img/sfondo12.svg');
     background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine di sfondo */
     background-position: center; /* Imposta la posizione del background al centro */
     z-index: 0;
@@ -125,14 +144,6 @@ html {
     font-size:4.3rem;
 }
 
-.arrow {
-    color: rgb(35, 100, 133);
-    width: 50%;
-    font-size: 4rem;
-    margin: 0 auto;
-    align-self: flex-end;
-}
-
 .alto {
     height: 0vh;
 }
@@ -173,12 +184,6 @@ html {
     font-size: 1rem;
 }
 
-footer {
-    background-color: #1c2c4a;
-    opacity: 0.9;
-    height: 8vh;
-}
-
 .item {
     border: 1px solid #000;
     padding: 20px;
@@ -190,14 +195,22 @@ footer {
 }
 
 
+
+
+
+
+
+
 /* Mobile Styles */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 850px){
 
     body {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
       }
+
+    
 
       .img-bg-section1{
         min-height: 200vh;
@@ -322,12 +335,13 @@ footer {
         font-size: 7rem;
     }
 
-    footer{
-        
+    footer{        
+        opacity: 0.9;
+        height: 8vh;
         width:200%; /*71vh*/
         flex-shrink: 0; /* Impedisce al footer di restringersi quando c'è poco contenuto nella section */
     }
-
+    
     .testo{
         font-size: 0.8rem;
     }
@@ -392,8 +406,10 @@ footer {
         height: 50vh !important;
     }
 
-    .mobile-space{
-        margin-top: -300px; /*SKILLS (mette la scritta frontend più in alto)*/
+   
+
+    .mobile-space  .intro{
+        margin-bottom: 30%;
     }
    
 }
@@ -407,6 +423,14 @@ footer {
     }
 
 
+    .w-120-orizzontale{
+        width:120% !important;
+    }
+
+
+    .orizzontale{
+        width: 150%;
+    }
 
     .img-bg-section1{
         min-height: 200vh !important;
@@ -592,7 +616,7 @@ footer {
 
 }
 /* Tablet Styles */
-@media only screen and (min-width: 801px) and (max-width: 1063px) {
+@media only screen and (min-width: 851px) and (max-width: 1263px) {
 
 
     svg{
@@ -605,7 +629,31 @@ footer {
         min-height: 100vh;
       }
 
+      img{
+        width: 300px;
+        height: 300px;
+    }
 
+    
+
+    .orizzontale p{
+        font-size: 18px !important;
+        text-align: center !important;
+    }
+
+    .orizzontale .title-big{
+        font-size: 3.5rem !important;
+    }
+
+    .w-120-orizzontale{
+        width:100% !important;
+    }
+
+
+    .title-big{
+        font-size: 4rem !important;
+        margin: 0 auto;
+    }  
      
     .title .min-2{
         height: 0vh;
@@ -652,9 +700,13 @@ footer {
         height: 30vh;
         font-size: 10rem;
     }
+
+    footer{
+        background-color: #1c2c4a
+    };
 }
   /* Desktop Styles */
-@media only screen and (min-width: 1064px){
+@media only screen and (min-width: 1264px){
     
     .section-grande{
         min-height: 130vh;  /*se si voglio aggiungere progetti, incrementare!*/
@@ -751,10 +803,14 @@ footer {
         width: 70%;
     }
 
-    footer {
-        height: 8vh; /*8vh su monitor*/
-        flex-shrink: 0;
+    footer{   
+        opacity: 0.9;
+        height: 8vh;
+        width:100%;
+        flex-shrink: 0; /* Impedisce al footer di restringersi quando c'è poco contenuto nella section */
     }
+
+    
 
     footer h6{
         font-size: 1rem !important;

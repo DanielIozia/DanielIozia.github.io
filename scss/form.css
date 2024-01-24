@@ -99,9 +99,35 @@ label {
   color: rgb(120, 120, 120);
 }
 
+/* TOAST */
+.container.watch {
+  position: relative;
+}
+
+.toast {
+  position: absolute;
+  right: 2vh;
+  bottom: 2vh;
+  z-index: 1;
+}
+
+.bg-color {
+  background-color: #86aac1;
+}
+
+.text-green {
+  color: #30b74f;
+}
+
 @media only screen and (max-width: 450px) {
   .login-form {
     padding: 20px 40px !important;
   }
+  footer {
+    color: white !important;
+  }
+  .toast {
+    right: 25%;
+    bottom: 3vh;
+  }
 }/*# sourceMappingURL=form.css.map */
-

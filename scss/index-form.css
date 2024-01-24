@@ -11,19 +11,6 @@ html {
 }
 
 
-
-.transparent-navbar {
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-
-.transparent-navbar.navbar-scrolled {
-    background-color: #000; /* Sostituisci con il colore desiderato quando la navbar è scrollata */
-    transition: background-color 0.3s ease; /* Aggiungi un'animazione di transizione al colore di sfondo */
-}
-
-
-
 .img-bg-section1{
     width: 100%;
     height: 100vh;
@@ -32,7 +19,7 @@ html {
     left: 0;
     background-size: cover; /* Imposta la dimensione dell'immagine di sfondo su "cover" */
     opacity: 0.6;
-    background-image: url('/Users/daniel/Desktop/Progetto2/img/sfondo12.svg');
+    background-image: url('/Users/daniel/Desktop/Portfolio/img/sfondo12.svg');
     background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine di sfondo */
     background-position: center; /* Imposta la posizione del background al centro */
     z-index: 0;
