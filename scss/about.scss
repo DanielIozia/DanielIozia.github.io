@@ -1,0 +1,50 @@
+/*link di start2impact*/
+.modifiche{
+    color: white;
+
+    :hover{
+        color: #3f64a8;
+    }
+}
+/*link di start2impact*/
+
+.modifiche-paragrafo{
+    text-align: left !important;
+}
+
+
+.grandezza-logo-social{
+    margin: 0 auto;
+    width:50px !important;
+    height:50px !important;
+
+    :hover{
+        width: 55px !important;
+        height: 55px !important;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+
+.social-links a {
+    color: inherit; /* Imposta il colore del testo come ereditato */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+
+.title .min-about{
+    height: 70vh;
+
+    h1{
+        font-size: 18rem;
+    }
+}
+
+img{
+    width: 350px;
+    height: 350px;
+}
+
+.font-p{
+    font-size:18px;
+}

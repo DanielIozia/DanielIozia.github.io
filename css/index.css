@@ -4,49 +4,12 @@ body, html {
     box-sizing: border-box;
     background: #000;
     color: #fff;
+    overflow-x: hidden;
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
-footer{
-    background-color: #1c2c4a !important;  
-}
-
-.modifiche{
-    color:white;
-}
-
-.modifiche:hover{
-    color: #3f64a8;
-}
-
-.modifiche-paragrafo{
-    text-align: left !important;
-}
-
-.grandezza-logo{
-    margin: 0 auto;
-    width:50px !important;
-    height:50px !important;
-}
-
-.grandezza-logo:hover{
-    width: 55px !important;
-    height: 55px !important;
-    transition: all 0.2s ease-in-out;
-}
-
-.social-links a {
-    color: inherit; /* Imposta il colore del testo come ereditato */
-    text-decoration: none; /* Rimuove la sottolineatura */
-}
-
 
 .img-bg-section1{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -62,69 +25,43 @@ footer{
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 100vh;
+    min-height: 100%;
 }
 
 .title {
     text-align: center;
-    height: 500px;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width:50%;
-    font-size: 35rem;
     margin-left:25%;
     margin-top:3%;
     top: 0;
     left: 0;
-    position: absolute; /*fixed per mobile?*/
+    position: absolute;
     z-index: -1;
-    transform: translateY(0) scale(1);
-    transition: all 0.2s cubic-bezier(.215, .61, .355, 1);
-    opacity: 0;
 }
 
 .title h1 {
-    font-size: 35rem;
-}
-
-.section.in-page .title {
-    transform: translateY(-50%,-50%) scale(0.2);
-    opacity: 0.1;
-}
-
-.min{
-    height: 50vh;
-    font-size: 25rem;
-}
-
-.mt-5 {
-    margin-top: 8px;
+    font-size: 28rem;
 }
 
 .panel {
     color: rgb(0, 0, 0);
     height: 100vh;
     width: 100%;
-    position: relative;
     z-index: 2;
     opacity: 1;
 }
 
-.hand {
-    align-self: center;
-    font-size: 4rem;
-}
-
 .container { 
+    margin-top:0;
+    width:100%;
     align-self: center;   
-    width: 40%;
-    padding: 4%;
+    padding: 5%;
 }
 
-.basso {
-    margin-top: 50px !important;
-}
 
 .intro{
     color: #f7f7f7;
@@ -132,40 +69,23 @@ footer{
     font-weight: bold;
 }
 
+.title-big-about{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    color: #f7f7f7;
+    font-size:5rem;
+}
+
 .title-big{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     color: #f7f7f7;
-    font-size:6rem;
-}
-
-.title-big-custom{
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    color: #f7f7f7;
-    font-size:4.3rem;
-}
-
-.alto {
-    height: 0vh;
-}
-.container .title-skill {
-    font-size: 2rem; /* Adjust the font size as needed */
-    margin-bottom: 10px; /* Add some spacing between the "Frontend" and "Backend" labels */
+    font-size:5rem;
 }
 
 .container .intro h4 {
-    font-size: 1.5rem; /* Adjust the font size of individual skills */
+    font-size: 1.5rem;
 }
 
-.title-skill{
-    color: #f7f7f7;
-    font-size: 4rem !important;
-}
-
-.section.in-page .panel .title {
-    transform: translateY(-45%) scale(0.2);
-    opacity: 1;
-}
-
+/* bottone curriculum */
 .btn.btn-outline-light {
     border-color: #fff;
     border-width: 2px; 
@@ -184,69 +104,94 @@ footer{
     font-size: 1rem;
 }
 
-.item {
-    border: 1px solid #000;
-    padding: 20px;
-    text-align: center;
-}
-
 .card-text{
     color:black;
 }
 
+footer{   
+    background-color: #1c2c4a !important;  
+    opacity: 0.9;
+    height: 8vh;
+    width:100%;
+    position: relative;
+    bottom:0;
+}
 
 
+footer h6{
+    font-size: 1rem !important;
+}
 
-
-
-
+footer h5{
+    font-size: 1rem;
+}
 
 /* Mobile Styles */
-@media only screen and (max-width: 850px){
-
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-
+@media only screen and (max-width: 800px){
     
 
-      .img-bg-section1{
-        min-height: 200vh;
+    .img-bg-section1{
+        min-height: 100%;
+        opacity: 0.5;
     }
     
     .section {
-        flex: 1; /* To make the section fill the available space */
         display:flex;
         justify-content: center;
         align-items: center;
-        width: 200%;
-        height:500% ; /* Per far sì che la section riempia lo spazio disponibile */
-      }
-
-      .section .album {
-        height: 300vh;
-      }
-
-    .title{
-        position:fixed;
+        width: 100%;
     }
 
     .panel {
         width: 100%;
-        height: 140vh;
+        min-height:100%;
     }
 
-    .img-bg-section1{
-        opacity: 0.5;
-        height: 160vh;
+    .title{
+        opacity: 0.1;
+    }
+      
+    .title-mobile{
+        font-size: 7rem !important;
     }
 
-    .title h1{
-        height: 200px !important;
-        font-size: 10rem !important;
+    .title .min-about{
+        font-size: 5rem !important;
     }
+
+    img{
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .title-big{
+        font-size: 3.5rem;
+        margin: 0 auto;
+    }
+
+    .title-big-about{
+        font-size: 2.8rem;
+    }
+
+    .font-p{
+        font-size: 10px !important;
+    }
+
+    .about .btn{
+        font-size: 10px;
+    }
+
+    .about img{
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    
+  
+    .title-big-2{
+        font-size:2.5rem !important;
+    }
+   
    
     .container {
         text-align: center;
@@ -254,373 +199,158 @@ footer{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width:100%;
-    }
-
-     .mobile {
-        display:flex !important ;
-        align-items: space-between !important;
-    }
-
-    .mobile .container {
-        margin-top: 40px;
-    }
-
-    
-
-    .album{
-        width:100%;
     }
 
     .album .container{
-        align-self:center;
         width: 50%;
     }
 
-    .container .mobile{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .container .centro-mobile{
-        align-self: center;
-    }
-
-    .container .intro {
-        font-size: 20px;
-    }
-
-    .container .intro-mobile{
-        font-size: 1.2rem;
-    }
-
-    .container .title-big-mobile{
-        font-size: 4rem;
-    }
-
-    .container .alto {
-        height: 50vh;
-    }
-
-    .container .btn{
-        padding: 6px 10px !important; 
-    }
-
-    .container .container{
-        margin-top: 130px;
-    }
-
-    .container .album{
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    .d-mobile{
-        display:none;
-    }
-
-    .min{
-        height: 60vh;
-        font-size: 7rem;
-    }
-
-    .title .min-project{
-        height: 50vh;
-    }
 
     .title .min-project h1{
-        font-size: 7rem;
-    }
+        font-size: 5rem;
+    }  
 
-    footer{        
-        opacity: 0.9;
-        height: 8vh;
-        width:200%; /*71vh*/
-        flex-shrink: 0; /* Impedisce al footer di restringersi quando c'è poco contenuto nella section */
-    }
-    
-    .testo{
-        font-size: 0.8rem;
-    }
-
-    .btn-mobile {
-        padding: 4px 8px !important;
-        font-size: 14px !important; /* Imposta la dimensione del font desiderata */
-    }
-
-    .position-mobile{
-        align-items:center !important;
-    }
-
-    .mobile-img {
-        width: 300px; 
-        height: 300px;
-    }
-
-    .dim-mobile{
-        font-size:55px;
-    }
-
-    .mobile-project{
-        height:150vh;
-        display: flex !important;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .mobile-project .container{
-        margin: 200px;
-        width:80%;
-    }
-
-    .mobile-project .mb{
-        margin-bottom:500px;
-    }
-
-    .img-project{
-        width: 150%;
-        height: 150%;
-        margin: 0 auto;
-    }
-
-    .destra-mobile{
-        margin-left:50px;
-    }
-    .sinistra-mobile{
-        margin-right:50px;
-    }
-
-    .album.container{
-        margin: 0 auto !important;
-    }
-
-    .title .min-2 h1{
-        font-size: 7rem !important;
-    }
-
-    .title .min-2{
-        height: 50vh !important;
-    }
-
-   
 
     .mobile-space  .intro{
         margin-bottom: 30%;
     }
+
+    .nav-item{
+        font-size:10px;
+      }
+    
+      .nav-item .btn{
+        font-size:10px;
+        padding: 2px 4px;
+      }
    
 }
 /*Mobile Horizontal*/
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
 
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-
-    .w-120-orizzontale{
-        width:120% !important;
-    }
-
-
-    .orizzontale{
-        width: 150%;
+    
+    footer{
+        height:20vh;
     }
 
     .img-bg-section1{
-        min-height: 200vh !important;
+        min-height: 100%;
+        opacity: 0.5;
     }
-
-    .section .album {
     
-        height: 500vh  !important; /*aumnetare quando aggiungo progetti */
-    }
-
     .section {
-        flex: 1; /* To make the section fill the available space */
+        border: 3px solid yellow;
         display:flex;
         justify-content: center;
         align-items: center;
-        width: 200%;
-        height:500% ;
-    }
-
-    .section .panel .title{
-        margin:0 auto;
-    }
-
-   
-
-    .section .panel {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height:170vh;
-    }
-
-    .title {
         width: 100%;
-        height:70vh;
-        position: absolute;
-    }
-
-    .title .min-2 h1{
-        font-size: 12rem !important;
-    }
-
-    .title .min-2{
-        height: 50vh !important;
     }
 
     .panel {
-        width: 155%;
-        height: 140vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height:100%;
     }
 
-    .img-bg-section1 {
-        opacity: 0.5;
-        height: 160vh;
+    .title{
+        opacity: 0.1;
+    }
+      
+    .title-mobile{
+        
+        width: 100%;
+        margin-left:25%;
+        font-size: 7rem !important;
     }
 
-    .title h1 {
-        height: 200px !important;
-        font-size: 10rem;
+    .title .min-about{
+        font-size: 5rem !important;
     }
 
+    img{
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .title-big{
+        font-size: 3.5rem;
+        margin: 0 auto;
+    }
+
+    .title-big-about{
+        font-size: 2.8rem;
+    }
+
+    .font-p{
+        font-size: 10px !important;
+    }
+
+    .about .btn{
+        font-size: 10px;
+    }
+
+    .about img{
+        width: 30px !important;
+        height: 30px !important;
+    }
+  
+    .title-big-2{
+        font-size:2.5rem !important;
+    }
+   
+   
     .container {
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100%;
-    }
-
-    .mobile {
-        display: flex !important;
-        align-items: space-between !important;
-    }
-
-    .mobile .container {
-        margin-top: 40px;
-    }
-
-    .container .mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .album{
-        width:100%;
     }
 
     .album .container{
-        align-self:center;
-        width: 100%;;
+        width: 50%;
     }
 
-    .container .centro-mobile {
-        align-self: center;
+
+    .title .min-project h1{
+        font-size: 8.5rem;
+    }  
+
+    .intro{
+        font-size:16px;
     }
 
-    .container .intro {
-        font-size: 20px;
+    .mobile-space  .intro{
+        margin-bottom: 30%;
     }
 
-    .container .intro-mobile {
-        font-size: 1.2rem;
-    }
-
-    .container .title-big-mobile {
-        font-size: 4rem;
-    }
-
-    .container .alto {
-        height: 50vh;
-    }
-
-    .container .btn {
-        padding: 6px 10px !important;
-    }
-
-    .container .container {
-        margin-top: 130px;
-    }
-
-    .container .album {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .d-mobile {
-        display: none;
-    }
-
-    .min {
-        height: 60vh;
-        font-size: 7rem;
-    }
-
+    .nav-item{
+        font-size:10px;
+      }
     
+      .nav-item .btn{
+        font-size:10px;
+        padding: 2px 4px;
+      }
 
-    .title .min-project {
-        height: 50vh;
-        opacity: 1 !important;
-    }
-
-    .title .min-project h1 {
-        font-size: 50rem;
-        opacity: 1 !important;
-    
-    }
-
-    footer {
-        height:30vh;
-        width: 200%; /*71vh*/
-        flex-shrink: 0; /* Prevents the footer from shrinking when there's little content in the section */
-    }
-
-    .testo {
-        font-size: 0.8rem;
-    }
-
-
-    .container .mobile-img{
-        margin-top:-150px;
-    }
-
-    .mobile-img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .dim-mobile {
-        font-size: 55px;
-    }
-    .mobile-project .mb {
-        margin-bottom: 500px;
-    }
-
-    .img-project {
-        width: 150%;
-        height: 150%;
-        margin: 0 auto;
-    }
+      .card{
+        padding: 0px !important;
+        border: 3px solid red;
+      }
 
 }
 /* Tablet Styles */
-@media only screen and (min-width: 851px) and (max-width: 1263px) {
+@media only screen and (min-width: 801px) and (max-width: 1063px) {
 
 
     svg{
         margin-top:15px;
+    }
+
+    .title{
+        opacity:0.1;
     }
 
     body {
@@ -634,7 +364,6 @@ footer{
         height: 300px;
     }
 
-    
 
     .orizzontale p{
         font-size: 18px !important;
@@ -706,13 +435,10 @@ footer{
     };
 }
   /* Desktop Styles */
-@media only screen and (min-width: 1264px){
-    
-    .section-grande{
-        min-height: 130vh;  /*se si voglio aggiungere progetti, incrementare!*/
-    }
+@media only screen and (min-width: 1064px){
 
     svg{
+        margin: 0 auto;
         margin-top:15px;
     }
 
@@ -722,126 +448,31 @@ footer{
         transition: all 1.5s cubic-bezier(.215,.61,.355,1);
     }
 
-    .container p{
-        text-align: center;
-        padding:20px;
-    }
-
-    .larghezza-desktop{
-        width: 50%;
-    }
-
-    .album .container{
-        height:150vh;
-    }
-
-
     .fade-in.in-page{
         opacity: 1;
         transform:translateY(0);
     }
 
-    .title h1{
-        font-size: 28rem;
-    }
-        
-    .container {
-        margin-top:0;
-        width:100%;
-    }
-
-    .container .container {
-        height: 25vh;
-        margin-top:0;
-    }
-
-    .container .container .intro {
-        font-size: 15px;
-    }
-
-    .container .intro {
-        font-size: 20px;
-    }
-
-    .container .title-big {
-        font-size: 5rem;
-    }
-
     .container .btn{
-        padding: 6px 8px !important; 
+        padding: 6px 8px;
     }
 
-    .min{
-        height: 45vh;
-        font-size: 18rem;
+    .title{
+    transform: translateY(0) scale(1);
+    transition: all 0.2s cubic-bezier(.215, .61, .355, 1);
+    opacity: 0;
     }
 
-    .skill-margin-desktop{
-        margin-top:7%;
-    }
-    
-
-    .title .min-project{ 
-        height: 20vh;
+    .section.in-page .title {
+        transform: translateY(-50%,-50%) scale(0.2);
+        opacity: 0.1;
     }
 
-    .title .min-project h1{
-        
-        font-size: 18rem;
+
+
+    .title .title-skills{
+        font-size: 25rem;
     }
-
-    .title .min-2{
-        height: 50vh;
-    }
-
-    .title .min-2 h1{
-        font-size: 18rem;
-    }
-
-    .login-form {
-        margin: 0 auto;
-        width: 70%;
-    }
-
-    footer{   
-        opacity: 0.9;
-        height: 8vh;
-        width:100%;
-        flex-shrink: 0; /* Impedisce al footer di restringersi quando c'è poco contenuto nella section */
-    }
-
-    
-
-    footer h6{
-        font-size: 1rem !important;
-    }
-
-    footer h4{
-        font-size: 1.3rem;
-    }
-
-    .display-desktop{
-        display: none;
-    }
-
-    .album .container{
-        align-self: start;
-        width:100%;
-        height:100%;
-          
-    }
-
-    .card-text{
-        border:1px solid white;
-        max-width: 100%;;
-    }
-
-    img{
-        width: 350px;
-        height: 350px;
-    }
-
-    
 }
 
 

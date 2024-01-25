@@ -87,13 +87,14 @@ body,html {
 footer {
   background-color: #1c2c4a;
   opacity: 0.9;
-  height: 80px !important;
+  height: 8vh !important;
+  width: 100%;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 800px){
 
     .img-bg-section1{
         min-height: 100%;
@@ -313,15 +314,9 @@ footer {
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 501px) and (max-width: 1063px) {
+@media only screen and (min-width: 801px) and (max-width: 1063px) {
   svg {
     margin-top: 15px;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
   }
 
   .img-bg-section1 {
