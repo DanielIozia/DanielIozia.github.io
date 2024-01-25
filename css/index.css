@@ -130,7 +130,7 @@ footer h5{
 @media only screen and (max-width: 800px){
     
     .img-bg-section1{
-        min-height: 100%;
+        min-height: 110%;
         opacity: 0.5;
     }
     
@@ -148,6 +148,7 @@ footer h5{
 
     .title{
         opacity: 0.1;
+        position: absolute;
     }
       
     .title-mobile{
@@ -201,7 +202,6 @@ footer h5{
         width: 50%;
     }
 
-
     .title .min-project{
         font-size: 5rem !important;
     }  
@@ -211,24 +211,24 @@ footer h5{
     }
 
     .nav-item{
-        font-size:10px;
+        font-size:13px;
       }
     
       .nav-item .btn{
-        font-size:10px;
-        padding: 2px 4px;
+        font-size:11px;
+        padding: 3px 6px;
       }
 }
 /*Mobile Horizontal*/
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
 
-    
     footer{
         height:20vh;
     }
 
     .img-bg-section1{
         min-height: 100%;
+        min-width: 105%;
         opacity: 0.5;
     }
     
@@ -312,7 +312,7 @@ footer h5{
     }  
 
     .intro{
-        font-size:16px;
+        font-size:15px !important;
     }
 
     .mobile-space  .intro{
@@ -320,18 +320,17 @@ footer h5{
     }
 
     .nav-item{
-        font-size:10px;
+        font-size:13px;
       }
     
       .nav-item .btn{
-        font-size:10px;
-        padding: 2px 4px;
+        font-size:11px;
+        padding: 3px 6px;
       }
 
 }
 /* Tablet Styles */
 @media only screen and (min-width: 801px) and (max-width: 1063px) {
-
 
     svg{
         margin-top:15px;
