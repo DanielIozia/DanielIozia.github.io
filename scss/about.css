@@ -28,9 +28,7 @@
 }
 
 .title .min-about {
-  height: 70vh;
-}
-.title .min-about h1 {
+  height:100%;
   font-size: 18rem;
 }
 

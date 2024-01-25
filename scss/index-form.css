@@ -14,7 +14,7 @@ body,html {
   left: 0;
   background-size: cover;
   opacity: 0.6;
-  background-image: url("/Users/daniel/Desktop/Portfolio/img/sfondo12.svg");
+  background-image: url("/Users/daniel/Desktop/Portfolio/img/sfondo.svg");
   background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine di sfondo */
   background-position: center; /* Imposta la posizione del background al centro */
   z-index: 0;
@@ -80,18 +80,26 @@ body,html {
 }
 
 .min {
-  
   font-size: 18rem;;
 }
 
-footer {
-  background-color: #1c2c4a;
+
+footer{   
+  background-color: #1c2c4a !important;  
   opacity: 0.9;
-  height: 8vh !important;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  
+  height: 13vh;
+  width:100%;
+  position: relative;
+  bottom:0;
+}
+
+
+footer h6{
+  font-size: 1rem !important;
+}
+
+footer h5{
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 800px){

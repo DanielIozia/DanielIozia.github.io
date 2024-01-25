@@ -117,7 +117,7 @@
                     <div class="h-100  d-flex justify-content-between centro-mobile w-75 w-120-orizzontale">
                         <!-- <h5 class="watch fade-in intro intro-mobile">View my CV</h5> -->
                         <div class="about">
-                            <a data-mdb-ripple-init class="btn btn-outline-light btn-md watch fade-in ms-auto mx-auto" onclick="confirmDownload()" href="file/Curriculum Info.zip" role="button" download="" target="_blank">CURRICULUM</a>
+                            <a data-mdb-ripple-init class="btn btn-outline-light btn-md watch fade-in ms-auto mx-auto" onclick="confirmDownload()" href="file/Curriculum Info.pdf" role="button" >CURRICULUM</a>
                         </div>
 
                         <div class="about watch fade-in social-links">
@@ -176,12 +176,10 @@
     </div> 
 
    <!--  PROJECTS -->
-    <div class="section watch section-grande" id="section3">  <!-- SE AGGIUNGO PROGETTI DEVO ALLUNGARE LA PAGINA: CLASSE section-grande -->
+    <div class="section watch" id="section3">  <!-- SE AGGIUNGO PROGETTI DEVO ALLUNGARE LA PAGINA: CLASSE section-grande -->
 
         <div class="title">
-            <div class="min-project">
-                <h1>PROJECTS</h1>
-            </div>
+            <h1 class="min-project">Projects</h1>
         </div>
         
         <div class="album py-5 d-flex justify-content-center align-items-center">
@@ -274,7 +272,6 @@
     
     </div>
 
-    
     <!-- FOOTER-->
     <footer class="d-flex justify-content-between align-items-center">
         <div>
@@ -309,7 +306,7 @@ var elements_to_watch = document.querySelectorAll(".watch");
     }
     
     var observer = new IntersectionObserver(callback, {
-       threshold: 0.8
+       threshold: 0.6
     });
     
     elements_to_watch.forEach((element) => {
@@ -336,31 +333,6 @@ var elements_to_watch = document.querySelectorAll(".watch");
 });
 // fa cambiare colore agli elementi della nav-bar quando sono sopra il pannello 
 
-
-
-
-
-
-
-
-//permette di fare il download del curriculum chiedendo il permesso 
-function confirmDownload() {
-            var isConfirmed = confirm("Aprire Curriculum?");
-            
-            if (isConfirmed) {
-                // Se l'utente conferma, avvia il download
-                var link = document.createElement('a');
-                link.href = 'file/Curriculum Info.pdf';
-                link.download = 'Curriculum_Info.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            } else {
-                // Altrimenti, puoi gestire l'annullamento qui
-                alert("Download annullato.");
-            }
-        }
-//permette di fare il download del curriculum chiedendo il permesso
 
 
 

@@ -15,7 +15,7 @@ body, html {
     left: 0;
     background-size: cover; /* Imposta la dimensione dell'immagine di sfondo su "cover" */
     opacity: 0.6;
-    background-image: url('/Users/daniel/Desktop/Portfolio/img/sfondo12.svg');
+    background-image: url('/Users/daniel/Desktop/Portfolio/img/sfondo.svg');
     background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine di sfondo */
     background-position: center; /* Imposta la posizione del background al centro */
     z-index: 0;
@@ -111,7 +111,7 @@ body, html {
 footer{   
     background-color: #1c2c4a !important;  
     opacity: 0.9;
-    height: 8vh;
+    height: 13vh;
     width:100%;
     position: relative;
     bottom:0;
@@ -129,7 +129,6 @@ footer h5{
 /* Mobile Styles */
 @media only screen and (max-width: 800px){
     
-
     .img-bg-section1{
         min-height: 100%;
         opacity: 0.5;
@@ -186,12 +185,9 @@ footer h5{
         height: 30px !important;
     }
 
-    
-  
     .title-big-2{
         font-size:2.5rem !important;
     }
-   
    
     .container {
         text-align: center;
@@ -206,12 +202,11 @@ footer h5{
     }
 
 
-    .title .min-project h1{
-        font-size: 5rem;
+    .title .min-project{
+        font-size: 5rem !important;
     }  
 
-
-    .mobile-space  .intro{
+    .mobile-space .intro{
         margin-bottom: 30%;
     }
 
@@ -223,7 +218,6 @@ footer h5{
         font-size:10px;
         padding: 2px 4px;
       }
-   
 }
 /*Mobile Horizontal*/
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
@@ -239,11 +233,12 @@ footer h5{
     }
     
     .section {
-        border: 3px solid yellow;
         display:flex;
         justify-content: center;
         align-items: center;
         width: 100%;
+        min-height: 140vh;
+        
     }
 
     .panel {
@@ -300,7 +295,6 @@ footer h5{
         font-size:2.5rem !important;
     }
    
-   
     .container {
         text-align: center;
         display: flex;
@@ -312,7 +306,6 @@ footer h5{
     .album .container{
         width: 50%;
     }
-
 
     .title .min-project h1{
         font-size: 8.5rem;
@@ -333,11 +326,6 @@ footer h5{
       .nav-item .btn{
         font-size:10px;
         padding: 2px 4px;
-      }
-
-      .card{
-        padding: 0px !important;
-        border: 3px solid red;
       }
 
 }
@@ -469,10 +457,18 @@ footer h5{
     }
 
 
-
     .title .title-skills{
         font-size: 25rem;
     }
+
+    .title .title-mobile{
+        font-size: 25rem;
+    }
+
+    .title .min-project{
+        font-size: 24rem;
+        height: 150%;
+    }  
 }
 
 
