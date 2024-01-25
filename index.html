@@ -96,7 +96,7 @@
         </div>
         <div class="panel d-flex justify-content-start align-items-center">
             
-            <div class="container ">
+            <div class="container">
                 
                  <!-- <span _ngcontent-ng-c1280225423="" class="watch fade-in hand">👋🏻</span> -->
                  <div class="h-100 d-flex flex-column justify-content-start align-items-center"> <!-- Aggiunto 'align-items-center' per centrare l'intero contenuto verticalmente -->
@@ -116,7 +116,7 @@
                     <div class="h-100  d-flex justify-content-between centro-mobile w-75 w-120-orizzontale">
                         <!-- <h5 class="watch fade-in intro intro-mobile">View my CV</h5> -->
                         <div>
-                        <a data-mdb-ripple-init class="btn btn-outline-light btn-md watch fade-in ms-auto mx-auto" href="#section1" role="button" rel="nofollow">CURRICULUM</a> 
+                            <a data-mdb-ripple-init class="btn btn-outline-light btn-md watch fade-in ms-auto mx-auto" onclick="confirmDownload()" href="file/Curriculum Info.zip" role="button" download="" target="_blank">CURRICULUM</a>
                         </div>
 
                         <div class="watch fade-in social-links">
@@ -335,6 +335,35 @@ var elements_to_watch = document.querySelectorAll(".watch");
     });
 });
 // fa cambiare colore agli elementi della nav-bar quando sono sopra il pannello 
+
+
+
+
+
+
+
+
+//permette di fare il download del curriculum chiedendo il permesso 
+function confirmDownload() {
+            var isConfirmed = confirm("Aprire Curriculum?");
+            
+            if (isConfirmed) {
+                // Se l'utente conferma, avvia il download
+                var link = document.createElement('a');
+                link.href = 'file/Curriculum Info.pdf';
+                link.download = 'Curriculum_Info.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } else {
+                // Altrimenti, puoi gestire l'annullamento qui
+                alert("Download annullato.");
+            }
+        }
+//permette di fare il download del curriculum chiedendo il permesso
+
+
+
     </script>
 </body>
 </html>
