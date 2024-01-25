@@ -103,6 +103,10 @@ footer h5{
 
 @media only screen and (max-width: 800px){
 
+    body{
+      overflow-y: hidden;
+    }
+
     .img-bg-section1{
         min-height: 100%;
         opacity: 0.5;
