@@ -15,7 +15,7 @@ body, html {
     left: 0;
     background-size: cover; /* Imposta la dimensione dell'immagine di sfondo su "cover" */
     opacity: 0.6;
-    background-image: url('/Users/daniel/Desktop/Portfolio/img/sfondo.svg');
+    background-image: url('../img/sfondo.svg');
     background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine di sfondo */
     background-position: center; /* Imposta la posizione del background al centro */
     z-index: 0;
