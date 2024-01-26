@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 .form-input-material {
   position: relative;
   margin: 12px 0;
@@ -103,7 +103,7 @@ label {
 .toast {
   position: absolute;
   right: 2%;
-  bottom: 10%;
+  bottom: 20%;
   z-index: 1;
 }
 

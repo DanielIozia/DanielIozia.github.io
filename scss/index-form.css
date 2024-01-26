@@ -89,7 +89,7 @@ footer{
   opacity: 0.9;
   height: 13vh;
   width:100%;
-  position: relative;
+  position: fixed;
   bottom:0;
 }
 
@@ -101,6 +101,7 @@ footer h5{
   font-size: 1rem;
 }
 
+/* display mobile */
 @media only screen and (max-width: 800px){
 
     body{
@@ -174,9 +175,7 @@ footer h5{
   }
 
   .toast {
-    position: absolute;
-    right:25%;
-    bottom:20%;
+    margin: 0 22% 130% auto;
     width:50%;
     z-index: 1; 
 }
@@ -199,9 +198,6 @@ footer h5{
 }
 
     footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
         max-height:8vh;
     }
 }
@@ -294,11 +290,10 @@ footer h5{
     }
 
     .toast {
-      position: absolute;
-      right:5% !important;
-      bottom:15% !important;
-      width:25%;
-      z-index: 1; 
+    border: 3px solid red;;
+    margin: 0 32% 31% auto;
+    width:25%;
+    z-index: 1; 
   }
 
   .toast .toast-header{
@@ -320,8 +315,6 @@ footer h5{
 
   footer {
     height: 60px !important;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     max-height:14vh;
   }
