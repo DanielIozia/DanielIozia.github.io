@@ -117,7 +117,6 @@ footer{
     bottom:0;
 }
 
-
 footer h6{
     font-size: 1rem !important;
 }
@@ -159,6 +158,10 @@ footer h5{
         font-size: 5rem !important;
     }
 
+    .intro{
+        font-size: 16px !important;
+    }
+
     img{
         width: 150px !important;
         height: 150px !important;
@@ -174,7 +177,7 @@ footer h5{
     }
 
     .font-p{
-        font-size: 10px !important;
+        font-size: 14px !important;
     }
 
     .about .btn{
@@ -214,17 +217,23 @@ footer h5{
         font-size:13px;
       }
     
-      .nav-item .btn{
+    .nav-item .btn{
         font-size:11px;
         padding: 3px 6px;
-      }
+    }
+
+    .container .row{
+        min-width:200%;
+    }
+
+    footer{
+        max-height:8vh;
+    }
+
 }
 /*Mobile Horizontal*/
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
 
-    footer{
-        height:20vh;
-    }
 
     .img-bg-section1{
         min-height: 100%;
@@ -250,23 +259,27 @@ footer h5{
     }
 
     .title{
+        margin: 5% auto;
+        min-width:100%;
         opacity: 0.1;
     }
       
     .title-mobile{
-        
-        width: 100%;
-        margin-left:25%;
-        font-size: 7rem !important;
+        min-width: 100%;
+        font-size: 12rem !important;
     }
 
     .title .min-about{
-        font-size: 5rem !important;
+        font-size: 10rem !important;
     }
 
     img{
         width: 150px !important;
         height: 150px !important;
+    }
+
+    .titoli-home{
+        margin-bottom:50%;
     }
 
     .title-big{
@@ -307,8 +320,8 @@ footer h5{
         width: 50%;
     }
 
-    .title .min-project h1{
-        font-size: 8.5rem;
+    .title .min-project{
+        font-size: 12rem !important;
     }  
 
     .intro{
@@ -326,6 +339,10 @@ footer h5{
       .nav-item .btn{
         font-size:11px;
         padding: 3px 6px;
+      }
+
+      .about-distance{
+        margin-bottom:30%;
       }
 
 }
@@ -427,6 +444,14 @@ footer h5{
     svg{
         margin: 0 auto;
         margin-top:15px;
+    }
+
+    .section{
+        min-height:100vh;
+    }
+
+    .section .album{
+        min-height:100vh;
     }
 
     .fade-in {
