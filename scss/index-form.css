@@ -102,7 +102,7 @@ footer h5{
 }
 
 /* display mobile */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 450px){
 
     body{
       overflow-y: hidden;
@@ -201,7 +201,6 @@ footer h5{
         max-height:8vh;
     }
 }
-
 /* Mobile orizzontale */
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
 
@@ -319,9 +318,8 @@ footer h5{
     max-height:14vh;
   }
 }
-
 /* Tablet Styles */
-@media only screen and (min-width: 801px) and (max-width: 1063px) {
+@media only screen and (min-width: 451px) and (max-width: 1063px) {
   svg {
     margin-top: 15px;
   }
