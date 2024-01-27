@@ -139,6 +139,12 @@
             return;
         }
 
+        // Verifica se l'email è valida
+        if (!validateEmail(email)) {
+            //se l'email non è valida, non fai nulla
+            return;
+        }
+        
         // Se l'email è già stata inviata, esci dalla funzione (ne manda solo una ogni refresh di pagina)
         if (emailSent) {
             return;
