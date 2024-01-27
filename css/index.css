@@ -111,7 +111,7 @@ body, html {
 .contact{
     border-radius:20%;
     background-color: #1c2c4a;
-    opacity:0.9;
+    opacity:0.8 !important;
    
 }
 

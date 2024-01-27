@@ -15,7 +15,6 @@
     <title>Daniel Iozia</title>
 </head>
 <body>
-
     
     <div class="img-bg-section1"> </div> 
     <!-- NAVBAR -->
@@ -34,6 +33,7 @@
             <div class="collapse navbar-collapse ms-auto justify-content-end" id="navbarsExample03">
                 <div>
                     <ul class="navbar-nav me-auto mb-2 mb-sm-0 order-1">
+
                         <li class="nav-item ms-auto">
                             <a class="nav-link" aria-current="page" href="#section0">Home</a>
                         </li>
@@ -46,9 +46,10 @@
                         <li class="nav-item ms-auto">
                             <a class="nav-link" href="#section3">Projects</a>
                         </li>
-                        <li class="nav-item ms-auto align-self-center">
+                        <li class="nav-item ms-auto">
                             <a class="nav-link "href="#section4">Contact</a>
-                        </li>             
+                        </li>   
+
                     </ul>
                 </div>
             </div>
@@ -349,6 +350,34 @@ var elements_to_watch = document.querySelectorAll(".watch");
     });
 });
 // fa cambiare colore agli elementi della nav-bar quando sono sopra il pannello 
+
+
+
+//quando faccio il refresh della pagina mi porta all'inizio nella section0
+document.addEventListener("DOMContentLoaded", function() {
+    // Ottieni l'ID dell'ultima sezione visitata salvato in localStorage
+    var lastVisitedSection = localStorage.getItem("lastVisitedSection");
+
+    // Se c'è un'ultima sezione visitata, scrolla fino ad essa
+    if (lastVisitedSection) {
+        var targetSection = document.getElementById(lastVisitedSection);
+        if (targetSection) {
+            targetSection.scrollIntoView();
+        }
+    }
+
+    // Aggiungi un gestore di eventi per il salvataggio della sezione corrente prima di un refresh
+    window.addEventListener("beforeunload", function() {
+        var currentSection = getCurrentSectionId();
+        localStorage.setItem("lastVisitedSection", currentSection);
+    });
+});
+
+function getCurrentSectionId() {
+    // Restituisci l'ID della sezione corrente basandoti sull'ID specifico della tua sezione
+    return "section0";
+}
+//quando faccio il refresh della pagina mi porta all'inizio nella section0
 
 </script>
 </body>
