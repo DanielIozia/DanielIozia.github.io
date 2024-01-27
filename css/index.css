@@ -108,6 +108,13 @@ body, html {
     color:black;
 }
 
+.contact{
+    border-radius:20%;
+    background-color: #1c2c4a;
+    opacity:0.9;
+   
+}
+
 footer{   
     background-color: #1c2c4a !important;  
     opacity: 0.9;
@@ -131,7 +138,7 @@ footer h5{
 
 
 /* mobile di lunghezza più "corta" */
-@media only screen and (max-width: 600px) and (max-height:700px){
+@media only screen and (max-width: 400px) and (max-height:700px){
 
     .img-bg-section1{
         height: 110vh;
@@ -241,10 +248,7 @@ footer h5{
         padding: 3px 6px;
     }
 
-    
-
-    .container .row{
-        
+    .container .row{        
         min-width:200%;
     }
 
@@ -383,6 +387,13 @@ footer h5{
         margin-bottom:10%;
       }
 
+      .contact{
+        width:70%;
+        height:35vh;
+        margin-bottom:10%;
+        margin-top:20%;
+    }
+
       footer{
         min-height:10vh !important;
       }
@@ -488,6 +499,21 @@ footer h5{
         min-width:200%;
     }
 
+    .contact{
+        width:70%;
+        height:30vh;
+        margin-bottom:10%;
+        margin-top:20%;
+    }
+
+    .contact h4{
+        font-size: 12px;
+    }
+
+    .contact .btn{
+        font-size:15px !important;
+    }
+
     footer{
         max-height:8vh;
     }
@@ -502,7 +528,7 @@ footer h5{
 
 }
 /*Mobile Horizontal*/
-@media only screen and (max-width: 1000px) and (orientation: landscape) {
+@media only screen and (max-width: 1162px) and (orientation: landscape) {
 
 
     .img-bg-section1{
@@ -615,12 +641,28 @@ footer h5{
         margin-bottom:30%;
       }
 
+      .contact{
+        width:40% !important;
+        height:60vh !important;
+        margin-bottom:10% !important;
+    }
+
+    .contact h4{
+        font-size: 12px !important;
+    }
+
+    .contact .btn{
+        font-size:15px !important;
+    }
 }
 /* Tablet Styles */
-@media only screen and (min-width: 801px) and (max-width: 1063px) {
+@media only screen and (min-width: 801px) and (max-width: 1163px) {
 
     svg{
         margin-top:15px;
+    }
+    .card{
+        border-radius:8%;
     }
 
     .title{
@@ -708,23 +750,32 @@ footer h5{
         width: 60%;
     }
 
+    .contact{
+        width:50%;
+        height:30vh;
+        margin-bottom: 10%;
+    }
+
     footer{
         background-color: #1c2c4a
     };
 }
   /* Desktop Styles */
-@media only screen and (min-width: 1064px){
+@media only screen and (min-width: 1164px){
 
     svg{
         margin: 0 auto;
         margin-top:15px;
+    }
+    .card{
+        border-radius:8%;
     }
 
     .fade-in {
         opacity: 0;
         transform: translateY(10vh);
         transition: opacity 1.5s cubic-bezier(.215, .61, .355, 1),
-                    transform 2.0s cubic-bezier(.215, .61, .355, 1);
+                    transform 2.5s cubic-bezier(.215, .61, .355, 1);
     }
     
     .fade-in.in-page {
@@ -769,6 +820,17 @@ footer h5{
         font-size: 24rem;
         height: 150%;
     }  
+
+    .contact{
+        width:40%;
+        height:50vh;
+    }
+
+    .contact .btn{
+        font-size:25px !important;
+        padding: 14px 20px;
+
+    }
 }
 
 
