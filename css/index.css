@@ -134,9 +134,6 @@ footer h5{
 
 
 
-
-
-
 /* mobile di lunghezza più "corta" */
 @media only screen and (max-width: 400px) and (max-height:700px){
 
@@ -231,9 +228,7 @@ footer h5{
         font-size: 5rem !important;
     }  
 
-    .mobile-space{
-        margin-bottom: 30%;
-    }
+    
 
     .mobile-space .intro{
         font-size:2rem;
@@ -383,9 +378,7 @@ footer h5{
         margin-bottom:-18%;
       }
 
-      .mobile-space{
-        margin-bottom:10%;
-      }
+     
 
       .contact{
         width:70%;
@@ -395,7 +388,7 @@ footer h5{
     }
 
       footer{
-        min-height:10vh !important;
+        min-height:12vh !important;
       }
 }
 /* Mobile Styles */
@@ -624,9 +617,9 @@ footer h5{
         font-size:15px !important;
     }
 
-    .mobile-space  .intro{
+   /* .mobile-space  .intro{
         margin-bottom: 30%;
-    }
+    }*/
 
     .nav-item{
         font-size:13px;
@@ -654,6 +647,20 @@ footer h5{
     .contact .btn{
         font-size:15px !important;
     }
+
+    footer{
+        max-height:13vh;
+    }
+
+    footer h4{
+        font-size: 0.9rem;
+    }
+    
+    footer h5{
+        font-size: 0.7rem;
+    }
+
+    
 }
 /* Tablet Styles */
 @media only screen and (min-width: 801px) and (max-width: 1163px) {
@@ -773,14 +780,14 @@ footer h5{
 
     .fade-in {
         opacity: 0;
-        transform: translateY(10vh);
+        transform: translateY(5vh);
         transition: opacity 1.5s cubic-bezier(.215, .61, .355, 1),
                     transform 2.5s cubic-bezier(.215, .61, .355, 1);
     }
     
     .fade-in.in-page {
         opacity: 1;
-        transform: translateY(10vh);
+        transform: translateY(5vh);
      }
 
     .section{
@@ -827,8 +834,8 @@ footer h5{
     }
 
     .contact .btn{
-        font-size:25px !important;
-        padding: 14px 20px;
+        font-size:20px !important;
+        padding: 12px 18px;
 
     }
 }
