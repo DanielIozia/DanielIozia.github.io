@@ -21,6 +21,11 @@ body, html {
     z-index: 0;
 }
 
+.min-project{
+    height: 50vh;
+    opacity:1;
+}
+
 .section {
     position: relative;
     z-index: 1;
@@ -791,7 +796,7 @@ footer h5{
      }
 
     .section{
-        min-height:100vh;
+        height:100vh;
     }
 
     .section .album{

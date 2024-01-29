@@ -47,22 +47,22 @@ label {
     margin-bottom: 10px;
     padding: 7px;
     resize: none;
-    
-    /*i want the text at the top of the inpunt, not in the middle*/
 }
 
 
+
+
+
+.label-message{
+    position: absolute;
+    top:15%;
+}
 
 .form-control-material-message:focus + .label-message,
 .form-control-material-message:not(:placeholder-shown) + .label-message {
     top: -10%;
     font-size: 12px;
     color: #f7f7f7;     /* colore del testo sopra la barra*/
-}
-
-.label-message{
-    position: absolute;
-    top:15%;
 }
 
 .login-form {
