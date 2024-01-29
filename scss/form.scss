@@ -42,14 +42,37 @@ label {
     color: #f7f7f7;     /* colore del testo sopra la barra*/
 }
 
+.form-control-material-message{
+    min-height:100px; 
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+    
+    /*i want the text at the top of the inpunt, not in the middle*/
+}
+
+
+
+.form-control-material-message:focus + .label-message,
+.form-control-material-message:not(:placeholder-shown) + .label-message {
+    top: -10%;
+    font-size: 12px;
+    color: #f7f7f7;     /* colore del testo sopra la barra*/
+}
+
+.label-message{
+    position: absolute;
+    top:15%;
+}
+
 .login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 60px;
-    color: rgb(255, 255, 255); 
+    color: #6c6c6c; /*sistemare  il colore*/
     background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow:
      0 0.4px 0.4px rgba(128, 128, 128, 0.109),
      0 1px 1px rgba(128, 128, 128, 0.155),
