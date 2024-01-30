@@ -46,29 +46,18 @@ label {
     min-height:100px; 
     margin-bottom: 10px;
     padding: 7px;
-    resize: none;
 }
-
-
-
-
 
 .label-message{
     position: absolute;
     top:15%;
 }
 
-.form-control-material-message:focus + .label-message,
-.form-control-material-message:not(:placeholder-shown) + .label-message {
-    top: -10%;
-    font-size: 12px;
-    color: #f7f7f7;     /* colore del testo sopra la barra*/
-}
-
 .login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius:10%;
     padding: 50px 60px;
     color: #6c6c6c; /*sistemare  il colore*/
     background: rgba(0, 0, 0, 0.7);
@@ -98,6 +87,7 @@ label {
         overflow: hidden;
     
     &::before {
+        
         position: relative;
         content: "";
         top: 0;

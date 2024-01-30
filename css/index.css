@@ -526,7 +526,7 @@ footer h5{
 
 }
 /* Mobile Orizzontale */
-@media only screen and (max-width: 1162px) and (orientation: landscape) {
+@media only screen and (max-width: 1025px) and (orientation: landscape) {
 
 
     .img-bg-section1{
@@ -610,9 +610,7 @@ footer h5{
         flex-direction: column;
     }
 
-    .album .container{
-        width: 50%;
-    }
+    
 
     .title .min-project{
         font-size: 12rem !important;
@@ -758,9 +756,7 @@ footer h5{
         font-size: 10rem;
     }
 
-    .album .container{
-        width: 60%;
-    }
+   
 
     .contact{
         width:50%;
@@ -772,6 +768,17 @@ footer h5{
         background-color: #1c2c4a
     };
 }
+
+@media only screen and (min-width: 800px) and (max-width:850px){
+    .container.container{
+        justify-content: center !important;
+    }
+    .album .container{
+        width: 60% !important;
+    }
+}
+
+
   /* Desktop */
 @media only screen and (min-width: 1164px){
 

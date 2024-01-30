@@ -83,7 +83,7 @@
                     </div>
                     <div class="form-input-material testo-form">
                         <input type="text" name="message" id="message" placeholder=" " autocomplete="on" class="form-control-material form-control-material-message text" required />
-                        <label for="message" class="label-message" style="text-align:start !important">Message</label>
+                        <label for="message" class="label-message">Message</label>
                         
                     </div>
                     <button onclick="SendMail()" id="sendButton" type="submit" class="bottone btn-primary btn-ghost testo-bottone-mobile">Send</button>
@@ -143,12 +143,10 @@
             //se l'email non è valida, non fai nulla
             return;
         }
-        
         // Se l'email è già stata inviata, esci dalla funzione (ne manda solo una ogni refresh di pagina)
         if (emailSent) {
             return;
         }
-
         // Disabilita il pulsante
         document.getElementById("sendButton").disabled = true;
 
