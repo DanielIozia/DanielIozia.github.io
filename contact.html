@@ -118,7 +118,7 @@
                 </button>
             </div>
             <div class="toast-body text-center text-green">
-                <strong>Email mandata con successo!</strong>
+                <strong>Grazie per avermi contattato!</strong>
             </div>
         </div>
 
@@ -160,7 +160,7 @@
         // Invia l'email utilizzando emailjs
         emailjs.send("service_0pl5l7o", "template_9975wp5", params).then(function (res) {
             // Mostra il toast di conferma
-            $('.toast-body').text("Email inviata con successo!");
+            $('.toast-body').text("Grazie per avermi contattato!");
             $('.toast').toast('show');
         }).finally(function () {
             // Riabilita il pulsante dopo che l'email è stata inviata o in caso di errore
