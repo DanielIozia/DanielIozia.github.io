@@ -109,6 +109,12 @@ body, html {
     font-size: 1rem;
 }
 
+
+    .card{
+        border-radius:8%;
+    }
+
+
 .card-text{
     color:black;
 }
@@ -683,10 +689,6 @@ footer h5{
     }
     
     
-    .card{
-        border-radius:8%;
-    }
-
     .title{
         opacity:0.1;
     }

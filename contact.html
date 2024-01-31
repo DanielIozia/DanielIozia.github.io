@@ -70,22 +70,22 @@
                     <h1 style="color:white;">Let's talk</h1>
                     <p style="text-align:center;white-space:pre-wrap;margin-bottom:5%; color:white;" class="">Feel free to reach out if you want to collaborate, connect or just have a chat.</p>
                     <div class="form-input-material testo-form">
-                        <input type="text" name="name" id="firstname" placeholder=" " autocomplete="on" class="form-control-material" required />
+                        <input type="text" name="name" id="firstname" placeholder=" " autocomplete="off" class="form-control-material" required />
                         <label for="username">First Name</label>
                     </div>
                     <div class="form-input-material testo-form">
-                        <input type="text" name="surname" id="lastname" placeholder=" " autocomplete="on" class="form-control-material" required />
+                        <input type="text" name="surname" id="lastname" placeholder=" " autocomplete="off" class="form-control-material" required />
                         <label for="lastname">Last Name</label>
                     </div>
                     <div class="form-input-material testo-form">
-                        <input type="email" name="email" id="email" placeholder=" " autocomplete="on" class="form-control-material" required />
+                        <input type="email" name="email" id="email" placeholder=" " autocomplete="off" class="form-control-material" required />
                         <label for="email">Email Address</label>
                     </div>
                     <div class="form-input-material testo-form">
-                        <input type="text" name="message" id="message" placeholder=" " autocomplete="on" class="form-control-material form-control-material-message text" required />
+                        <textarea type="text" name="message" id="message" placeholder=" " autocomplete="off" class="form-control-material form-control-material-message text" required></textarea>
                         <label for="message" class="label-message">Message</label>
-                        
                     </div>
+                    
                     <button onclick="SendMail()" id="sendButton" type="submit" class="bottone btn-primary btn-ghost testo-bottone-mobile">Send</button>
                 </form>
             </div>
