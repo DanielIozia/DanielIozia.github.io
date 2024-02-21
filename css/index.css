@@ -258,6 +258,10 @@ footer h5{
         min-width:200%;
     }
 
+    .album image{
+        height: 75% !important;
+    }
+
     footer{
         max-height:8vh;
     }
