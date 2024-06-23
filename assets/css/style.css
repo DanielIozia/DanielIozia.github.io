@@ -60,7 +60,7 @@ a,a:hover,a:active,a:focus {
 }
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
-	color:#43485c;
+	color:#eca36c;
     font-size: 16px;
 	font-family: 'Poppins', sans-serif;
 	text-transform: capitalize;
@@ -342,6 +342,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff7f50;}
     padding: 80px 0;
 }
 
+
+
 /*.education-horizontal-timeline*/
 .education-horizontal-timeline .col-sm-4 {padding:0 2px;}
 
@@ -385,6 +387,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     padding-bottom: 50px;
     border-bottom: 1px solid #e5ebf2;
     color:#ff7f50;
+}
+
+.progressText{
+    color:#d6d6d6;
 }
 .single-progress-txt {
     display: flex;
@@ -460,7 +466,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .experience-time h3 {
     font-size: 16px;
     font-weight: 300;
-    color: #636a82;
+    color: #f7f7f7;
     margin-top: 14px;
     text-transform: uppercase;
 }
@@ -497,7 +503,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-transform: uppercase;
 }
 .timeline-content h5 {
-    color: #636a82;
+    color: #f7f7f7;
     font-size: 14px;
     font-weight: 300;
     margin: 18px 0 20px;
