@@ -265,6 +265,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff7f50;}
     padding: 35px 0 43px;
     border-bottom: 1px solid #999fb3;
 }
+
+.overLink:hover{
+    color:#f7f7f7;
+    
+}
 .single-about-add-info {
     margin: 35px 0;
 }
