@@ -638,7 +638,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     flex-direction: column; /* Per impilare il titolo sopra l'immagine */
 }
 
-
 .image-title {
     position: absolute;
     top: 10px; /* Distanza dalla parte superiore del contenitore */
@@ -656,6 +655,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-overflow: ellipsis; /* Aggiunge i puntini di sospensione se il testo è troppo lungo */
 }
 
+/* Immagini */
 .isotope .item img {
     width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
     height: 100%; /* L'immagine occupa tutta l'altezza del contenitore */
@@ -667,7 +667,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transform: scale(1.1); /* Ingrandisce l'immagine leggermente quando si passa sopra con il mouse */
 }
 
-/*.isotope-overlay*/
+/* Overlay */
 .isotope-overlay {
     position: absolute;
     height: 100%;
@@ -693,6 +693,22 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transform: scale(1);
     top: 0;
 }
+
+/* Media queries per la responsività */
+@media (max-width: 768px) {
+    .image-title {
+        font-size: 15px; /* Riduce la dimensione del font su schermi più piccoli */
+        padding: 4px 8px; /* Riduce la spaziatura interna */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-title {
+        font-size: 13px; /* Riduce ulteriormente la dimensione del font su schermi molto piccoli */
+        top: 5px; /* Diminuisce la distanza dalla parte superiore del contenitore */
+    }
+}
+
 
 /*-------------------------------------
         10. Clients
