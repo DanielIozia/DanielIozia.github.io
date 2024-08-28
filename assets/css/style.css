@@ -611,11 +611,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         9. Portfolio
 --------------------------------------*/
 .portfolio {
-    padding:  50px 0 100px;
-    border:  1px solid #e5ebf2;
+    padding: 50px 0 100px;
+    border: 1px solid #e5ebf2;
 }
 
-.portfolio-content {padding-top: 100px;}
+.portfolio-content {
+    padding-top: 100px;
+}
 
 /* ---- .item ---- */
 .isotope:after {
@@ -623,65 +625,74 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     display: block;
     clear: both;
 }
+
 .isotope .item {
-    position:relative;
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
     margin-bottom: 30px;
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
+    aspect-ratio: 1/1; /* Imposta il rapporto d'aspetto 1:1 per rendere il contenitore quadrato */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Per impilare il titolo sopra l'immagine */
 }
-/*.item img*/
-.isotope .item img{
-    max-width:100%;
-    max-height:100%;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
+
+
+.image-title {
+    position: absolute;
+    top: 10px; /* Distanza dalla parte superiore del contenitore */
+    left: 50%; /* Posiziona il titolo al centro orizzontalmente */
+    transform: translateX(-50%); /* Allinea centralmente il testo */
+    color: #ffffff; /* Colore del testo */
+    background-color: rgba(0, 0, 0, 0.6); /* Sfondo semitrasparente per contrasto */
+    padding: 5px 10px; /* Spaziatura interna */
+    font-size: 16px; /* Dimensione del testo */
+    z-index: 2; /* Assicura che il titolo stia sopra l'immagine */
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+    text-align: center; /* Centra il testo all'interno del div */
+    white-space: nowrap; /* Impedisce al testo di andare a capo */
+    overflow: hidden; /* Nasconde il testo che eccede */
+    text-overflow: ellipsis; /* Aggiunge i puntini di sospensione se il testo è troppo lungo */
 }
-.isotope .item:hover  img{
-    -webkit-transform:scale(1.5);
-    -moz-transform:scale(1.5);
-    -ms-transform:scale(1.5);
-    -o-transform:scale(1.5);
-    transform:scale(1.5);
-}/*.item img*/
+
+.isotope .item img {
+    width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
+    height: 100%; /* L'immagine occupa tutta l'altezza del contenitore */
+    object-fit: cover; /* Assicura che l'immagine copra interamente il contenitore senza deformarsi */
+    transition: 0.5s; /* Transizione su hover */
+}
+
+.isotope .item:hover img {
+    transform: scale(1.1); /* Ingrandisce l'immagine leggermente quando si passa sopra con il mouse */
+}
 
 /*.isotope-overlay*/
-.isotope-overlay{
-    position:absolute;
-    height:100%;
-    width:100%;
-    background:rgba(31,44,108,.5);
-    display:flex;
-    align-items:center;
+.isotope-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(31, 44, 108, .5);
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
-    justify-content:center;
-    flex-direction:row;
-    -webkit-transform:scale(0);
-    -moz-transform:scale(0);
-    -ms-transform:scale(0);
-    -o-transform:scale(0);
-    transform:scale(0);
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+    justify-content: center;
+    flex-direction: row;
+    transform: scale(0);
     transition: .5s;
 }
+
 .isotope-overlay a {
     display: inline-block;
     color: #fff;
     font-size: 14px;
     text-align: center;
 }
-.isotope .item:hover .isotope-overlay{
-    -webkit-transform:scale(1);
-    -moz-transform:scale(1);
-    -ms-transform:scale(1);
-    -o-transform:scale(1);
-    transform:scale(1);
-    top:0;
-}/*.isotope-overlay*/
+
+.isotope .item:hover .isotope-overlay {
+    transform: scale(1);
+    top: 0;
+}
 
 /*-------------------------------------
         10. Clients
