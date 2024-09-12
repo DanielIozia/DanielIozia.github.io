@@ -48,6 +48,17 @@
     
 }/*max-width:768px*/
 
+@media (max-width: 768px) {
+    .welcome-hero {
+        background: #383839;
+        background-image: none;
+    }
+	.welcome-hero:before{
+		background: #383839; 
+	}
+}
+
+
 @media screen and (max-width:767px){
 	.single-about-img {max-width: 450px;}
 	.experience-time span>i,.timeline-content span>i,.main-timeline:before {display: none;}
