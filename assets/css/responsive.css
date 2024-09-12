@@ -40,7 +40,6 @@
 	.timeline-content span>i{left: 0%;top: -54%;}
 	.experience-time span>i {left: -6%;top: 6%;}
 	.main-timeline:before {left:0.4%;}
-
 	.single-horizontal-timeline .experience-time,.single-horizontal-timeline .timeline-content {margin: 0;}
 }/*max-width:991px*/
 
