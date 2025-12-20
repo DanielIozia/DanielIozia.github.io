@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daniel Iozia - Full Stack Developer specializzato in Angular e Java Spring Boot. Portfolio professionale."
+    />
+    <title>Daniel Iozia | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a href="#" class="logo">Daniel Iozia</a>
+        <div class="nav-links">
+          <a href="#about">Chi Sono</a>
+          <a href="#skills">Competenze</a>
+          <a href="#projects">Progetti</a>
+          <a href="#experience">Esperienza</a>
+          <a href="#contact" class="btn-primary">Contattami</a>
+          <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <svg
+              class="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+        <button id="mobile-menu-btn" aria-label="Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container hero-content">
+          <p class="subtitle">Ciao, sono</p>
+          <h1>Daniel Iozia</h1>
+          <h2 class="role">Full Stack Developer</h2>
+          <p class="description">
+            Sviluppo applicazioni web moderne, scalabili e performanti
+            utilizzando <strong>Angular</strong> e
+            <strong>Java Spring Boot</strong>. Unisco solide basi accademiche in
+            Informatica con esperienza reale in azienda.
+          </p>
+          <div class="cta-group">
+            <a href="#projects" class="btn-primary">Vedi i miei progetti</a>
+            <a href="#contact" class="btn-outline">Contattami</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">Chi Sono</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                Sono uno sviluppatore software appassionato con una forte base
+                accademica e pratica. Attualmente studio
+                <strong>Informatica all’Università di Pisa</strong> e lavoro
+                come Full Stack Developer, dove ho affinato le mie competenze in
+                contesti Agile reali.
+              </p>
+              <p>
+                Il mio percorso è stato arricchito da un'esperienza
+                <strong>Erasmus in Spagna</strong>, che ha ampliato i miei
+                orizzonti culturali e professionali. Amo affrontare sfide
+                complesse, dall'architettura backend alla creazione di
+                interfacce utente intuitive.
+              </p>
+              <p>
+                Credo fermamente nella scrittura di codice pulito, manutenibile
+                e nell'apprendimento continuo. Quando non programmo, mi trovi
+                probabilmente a esplorare nuove tecnologie o a migliorare le mie
+                skill linguistiche.
+              </p>
+            </div>
+            <!-- Placeholder for an image if user wants to add one later, or a stylistic element -->
+            <div class="about-visual">
+              <img
+                src="src\assets\img\io.jpg"
+                alt="Daniel Iozia"
+                class="profile-photo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title">Competenze Tecniche</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <ul class="skill-list">
+                <li>Angular (v14+)</li>
+                <li>TypeScript</li>
+                <li>HTML5 & CSS3/SCSS</li>
+                <li>Angular Material</li>
+                <li>PrimeNG</li>
+                <li>Syncfusion (Data Viz)</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <ul class="skill-list">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>RESTful APIs</li>
+                <li>JPQL / Hibernate</li>
+                <li>Design Patterns</li>
+                <li>Microservices Basics</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Database & Tools</h3>
+              <ul class="skill-list">
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Git & GitHub</li>
+                <li>Docker (Basic)</li>
+                <li>Postman</li>
+                <li>IntelliJ / VS Code</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Soft Skills</h3>
+              <ul class="skill-list">
+                <li>Agile / Scrum</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+                <li>Time Management</li>
+                <li>Comunicazione</li>
+                <li>Adattabilità</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Progetti</h2>
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-content">
+                <h3>UIB Unified Portal</h3>
+                <p class="project-desc">
+                  Simulazione di una piattaforma unificata per la gestione
+                  accademica della Universidad de las Islas Baleares. Include
+                  automazione processi, prenotazione tutorati, notifiche in
+                  tempo reale e accesso sicuro, con focus su esperienza
+                  ottimizzata per studenti e personale.
+                </p>
+                <div class="tech-stack">
+                  <span>Documentazione</span>
+                  <span>Gestione Team</span>
+                  <span>Analisi Requisiti</span>
+                  <span>Prototipazione</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="src\assets\pdf\Práctica final (cliente).pdf"
+                    target="_blank"
+                    title="Proprietario (Non pubblico)"
+                    >Anteprima documento</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="project-content">
+                <h3>BookedOne (Full-Stack)</h3>
+                <p class="project-desc">
+                  Progetto <strong>full-stack</strong> per la gestione di eventi
+                  e prenotazioni. Implementato frontend con Angular, backend con
+                  Spring Boot, database MongoDB e autenticazione JWT. Gli utenti
+                  possono acquistare biglietti, gli admin gestirli. Esperienza
+                  pratica nello sviluppo full-stack e interazione client-server.
+                </p>
+                <div class="tech-stack">
+                  <span>Angular</span>
+                  <span>Spring Boot</span>
+                  <span>MongoDB</span>
+                  <span>JWT Auth</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/DanielIozia/BookedOne"
+                    target="_blank"
+                    title="github"
+                    >Repository</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+              <div class="project-content">
+                <h3>LookBook (Backend)</h3>
+                <p class="project-desc">
+                  Progetto backend sviluppato in <strong>Java</strong> per la
+                  gestione di un sistema di capi di abbigliamento usati.
+                  L'applicazione permette di visualizzare capi disponibili,
+                  gestire vendite e resi, aggiungere utenti e generare file CSV
+                  dei prodotti. Il progetto include la progettazione modulare
+                  con controller e servizi dedicati per utenti, vendite e capi,
+                  offrendo un'esperienza completa di sviluppo backend e gestione
+                  dati.
+                </p>
+                <div class="tech-stack">
+                  <span>Java</span>
+                  <span>Maven</span>
+                  <span>Backend Development</span>
+                  <span>File CSV</span>
+                  <span>Gestione Dati</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/DanielIozia/LookBook"
+                    title="Backend Project - Nessuna interfaccia frontend"
+                    >Repository</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <h2 class="section-title">Esperienza</h2>
+          <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item">
+              <div class="timeline-date">Marzo 2025 – Presente</div>
+              <div class="timeline-content">
+                <h3>Software Developer</h3>
+                <span class="company">MEEW Srl</span>
+                <p>
+                  <strong>Sviluppo Frontend con Angular:</strong> Creazione di
+                  interfacce utente modulari e responsive sfruttando la suite di
+                  componenti PrimeNG.<br />
+                  <strong>Data Visualization Avanzata:</strong> Implementazione
+                  di dashboard interattive per l'analisi dinamica dei dati
+                  tramite la libreria Syncfusion.
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="timeline-item">
+              <div class="timeline-date">Ottobre 2024 – Marzo 2025</div>
+              <div class="timeline-content">
+                <h3>Web Developer</h3>
+                <span class="company">TAAK SRLS</span>
+                <p>
+                  <strong>Sviluppo Frontend con Angular:</strong> Progettazione
+                  di interfacce utente complesse e responsive sfruttando i
+                  componenti di Angular Material.<br />
+                  <strong>State Management:</strong> Implementazione
+                  dell'architettura Redux tramite NgRx per una gestione
+                  efficiente e scalabile dello stato applicativo.<br />
+                  <strong>Sviluppo Backend:</strong> Gestione della persistenza
+                  dei dati in ambiente Java, con scrittura e ottimizzazione di
+                  query complesse tramite JPQL.<br />
+                  <strong>Architettura Software:</strong> Strutturazione
+                  dell'architettura backend seguendo design pattern e best
+                  practices per garantire manutenibilità e scalabilità del
+                  codice.<br />
+                  <strong>Collaborazione:</strong> Lavoro attivo in team,
+                  contribuendo al code review e al coordinamento delle attività
+                  di sviluppo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="container">
+          <h2 class="section-title">Formazione</h2>
+          <div class="education-grid">
+            <div class="edu-card">
+              <h3>Corso di Laurea in Scienze e Tecnologie Informatiche</h3>
+              <span class="institution">Università di Pisa</span>
+              <p class="period">Settembre 2022 – In corso</p>
+              <p>
+                Forte impronta scientifica e logico-matematica. Focus su problem
+                solving, analisi della complessità, progettazione di sistemi
+                software e gestione dei dati.
+              </p>
+            </div>
+            <div class="edu-card">
+              <h3>Erasmus+ – Universitat de les Illes Balears (Spagna)</h3>
+              <span class="institution">Escuela Politécnica Superior</span>
+              <p class="period">Febbraio 2025 – Luglio 2025</p>
+              <p>
+                Esperienza accademica internazionale. Adattamento a contesto
+                universitario estero e miglioramento delle competenze
+                linguistiche e personali.
+              </p>
+            </div>
+            <div class="edu-card">
+              <h3>Full Stack Development Course</h3>
+              <span class="institution">Start2Impact University</span>
+              <p class="period">Ottobre 2023 – Settembre 2024</p>
+              <p>
+                Sviluppo frontend con Angular e backend con Java e Spring Boot.
+                Realizzazione di progetti pratici e lavoro in team con
+                metodologia Agile.
+              </p>
+            </div>
+          </div>
+
+          <div class="languages-section">
+            <h3>Lingue</h3>
+            <div class="lang-grid">
+              <div class="lang-item">
+                <span class="lang-name">Italiano</span>
+                <span class="lang-level">Madrelingua</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">Inglese</span>
+                <span class="lang-level">Intermedio (B2)</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">Spagnolo</span>
+                <span class="lang-level">Intermedio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Left Column: Contact CTA -->
+          <div class="footer-contact">
+            <h2>Contattami</h2>
+            <p>Sei interessato al mio profilo o vuoi collaborare? Scrivimi!</p>
+            <button id="open-contact-modal" class="btn-primary">
+              Scrivimi un'email
+            </button>
+          </div>
+
+          <!-- Right Column: Social & CV -->
+          <div class="footer-social">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a
+                href="https://github.com/DanielIozia"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/daniel-iozia-3b57a1377/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+            <a
+              href="src\assets\curriculum\DanielIoziaCV20122025.pdf"
+              class="btn-outline btn-sm"
+              target="_blank"
+              >Anteprima CV</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Daniel Iozia. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal-overlay" aria-hidden="true">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Contattami</h3>
+          <button id="close-modal" class="close-btn" aria-label="Chiudi">
+            &times;
+          </button>
+        </div>
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Il tuo nome"
+              />
+              <span class="error-msg" id="name-error"
+                >Inserisci il tuo nome</span
+              >
+            </div>
+            <div class="form-group">
+              <label for="surname">Cognome *</label>
+              <input
+                type="text"
+                id="surname"
+                name="surname"
+                required
+                placeholder="Il tuo cognome"
+              />
+              <span class="error-msg" id="surname-error"
+                >Inserisci il tuo cognome</span
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="latua@email.com"
+            />
+            <span class="error-msg" id="email-error"
+              >Inserisci un'email valida</span
+            >
+          </div>
+          <div class="form-group">
+            <label for="object">Oggetto *</label>
+            <input
+              type="text"
+              id="object"
+              name="object"
+              required
+              placeholder="Oggetto della richiesta"
+            />
+            <span class="error-msg" id="object-error"
+              >Inserisci un oggetto</span
+            >
+          </div>
+          <div class="form-group">
+            <label for="message">Messaggio *</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Il tuo messaggio..."
+              rows="4"
+            ></textarea>
+            <span class="error-msg" id="message-error"
+              >Il messaggio deve essere di almeno 10 caratteri</span
+            >
+          </div>
+          <button type="submit" id="submit-btn" class="btn-primary" disabled>
+            Invia Email
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Toaster Notification -->
+    <div id="toaster" class="toaster" aria-hidden="true"></div>
+
+    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/email.js"></script>
+  </body>
+</html>
